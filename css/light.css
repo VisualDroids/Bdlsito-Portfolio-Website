@@ -81,6 +81,10 @@ img {
   width: 100%;
   height: auto;
 }
+video {
+  width: 100%;
+  height: auto;
+}
 
 span,
 a,
@@ -2898,6 +2902,7 @@ span:hover {
   z-index: -1;
 }
 
+
 .freelancre .cont h1 {
   font-size: 35px;
 }
@@ -4989,12 +4994,26 @@ span:hover {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
+.portfolio .gallery .items .item-img:hover video {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
 
 .portfolio .gallery .items .item-img:hover .cont {
   opacity: 1;
 }
 
 .portfolio .gallery .items .item-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.portfolio .gallery .items .item-img video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
